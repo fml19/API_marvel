@@ -8,7 +8,7 @@ Library     ${EXECDIR}/factories/Thanos.py
 *Test Cases*
 Deve cadastrar um personagem
 
-    Account And Set Headers     vet.fml@gmail.com
+    Set Client Key     vet.fml@gmail.com
 
     &{personagem}       Factory Thanos
 
@@ -20,7 +20,7 @@ Deve cadastrar um personagem
     Status Should Be        200     ${response}
 
 *Keywords*
-Account And Set Headers
+Set Client Key
     [Arguments]         ${email}
 
     &{usuario}          Create Dictionary       email=${email}
