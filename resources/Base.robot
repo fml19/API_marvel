@@ -3,6 +3,10 @@ Documentation       Aqui é o começo
 
 Library         RequestsLibrary
 
+#Aproveitando URI
+*Variables*
+${API_URI}     http://marvel.qaninja.academy
+
 *Keywords*
 Set Client Key
     [Arguments]         ${email}
@@ -10,7 +14,7 @@ Set Client Key
     &{usuario}          Create Dictionary       email=${email}
 
     ${response}         POST
-    ...                 http://marvel.qaninja.academy/accounts
+    ...                 ${API_URI}/accounts
     ...                 json=${usuario}
 
     ${client_key}       Set Variable            ${response.json()}[client_key]
