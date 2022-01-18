@@ -23,3 +23,7 @@ Set Client Key
     &{HEADERS}          Create Dictionary       client_key=${client_key}
 
     Set Suite Variable      ${HEADERS}
+
+#Apagar repositório antes de realizar o teste para não dar duplicata
+Back To The Past
+    DELETE      ${API_URI}/delorean         headers=${HEADERS}

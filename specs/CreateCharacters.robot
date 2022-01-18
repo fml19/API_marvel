@@ -3,15 +3,18 @@
 Documentation       Suite de Teste do cadastro de personagens na API da Marvel
 
 Resource     ${EXECDIR}/resources/Base.robot   
-Library     ${EXECDIR}/resources/factories/Thanos.py
+Library      ${EXECDIR}/resources/factories/Thanos.py
+Library      ${EXECDIR}/resources/factories/Deadpool.py
+
+#roda antes de cada teste
+Suite Setup         Run Keywords         Set Client Key  vet.fml@gmail.com
+...                 AND                  Back To The Past
 
 *Test Cases*
 Deve cadastrar um personagem
 
-    Set Client Key     vet.fml@gmail.com
-
-   &{personagem}       Factory Thanos
-   ${response}     POST New Character      ${personagem}  
+   &{personagem}         Factory Thanos
+   ${response}           POST New Character      ${personagem}  
     
     Status Should Be        200     ${response}
 
@@ -19,7 +22,7 @@ Deve cadastrar um personagem
 Não deve cadastrar o mesmo nome  
 
     #Dado que Thanos no sistema
-    ${personagem}       Factory Thanos
+    ${personagem}       Factory Deadpool
     POST New Character      ${personagem} 
 
     #Quando faço uma requisição POST para a rota characters
