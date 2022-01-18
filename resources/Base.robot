@@ -3,6 +3,8 @@ Documentation       Aqui é o começo
 
 Library         RequestsLibrary
 
+Resource        routes/Characters.robot
+
 #Aproveitando URI
 *Variables*
 ${API_URI}     http://marvel.qaninja.academy
