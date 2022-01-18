@@ -1,0 +1,5 @@
+Para criar pasta log e organizar a saida dos relatórios;
+No cmd:
+robot -d .logs mais nome do arquivo.robot;
+Para executar o teste:
+robot -d ./logs/ specs/nome do arquivo.robot;
