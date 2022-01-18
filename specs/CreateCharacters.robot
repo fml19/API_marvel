@@ -7,8 +7,7 @@ Library      ${EXECDIR}/resources/factories/Thanos.py
 Library      ${EXECDIR}/resources/factories/Deadpool.py
 
 #roda antes de cada teste
-Suite Setup         Run Keywords         Set Client Key  vet.fml@gmail.com
-...                 AND                  Back To The Past
+Suite Setup        Super Setup      vet.fml@gmail.com  
 
 *Test Cases*
 Deve cadastrar um personagem
