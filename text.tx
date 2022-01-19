@@ -8,3 +8,12 @@ robot -d ./logs/ specs/nome do arquivo.robot;
 
 Criando um gerador de Id sendo que seu banco de dados é mongoDB
     no cmd pip install bson
+
+Implementar ALLURE ROBOT
+
+https://github.com/allure-framework/allure-python/tree/master/allure-robotframework
+
+No cmd:
+    pip install allure-robotframework;  
+    depois é so executar:
+    robot -d ./logs --listener allure_robotframework specs/
