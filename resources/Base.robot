@@ -2,6 +2,7 @@
 Documentation       Aqui é o começo
 
 Library         RequestsLibrary
+Library         Helpers.py
 
 Resource        routes/Characters.robot
 

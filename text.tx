@@ -3,3 +3,8 @@ No cmd:
 robot -d .logs mais nome do arquivo.robot;
 Para executar o teste:
 robot -d ./logs/ specs/nome do arquivo.robot;
+
+
+
+Criando um gerador de Id sendo que seu banco de dados é mongoDB
+    no cmd pip install bson
