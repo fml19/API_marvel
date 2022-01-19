@@ -7,7 +7,7 @@ Library      ${EXECDIR}/resources/factories/Thanos.py
 Library      ${EXECDIR}/resources/factories/Deadpool.py
 
 #roda antes de cada teste
-Suite Setup        Super Setup      vet.fml@gmail.com  
+Suite Setup        Super Setup      user@gmail.com  
 
 *Test Cases*
 Deve cadastrar um personagem

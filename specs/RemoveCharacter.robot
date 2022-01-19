@@ -8,7 +8,7 @@ Library      ${EXECDIR}/resources/factories/Xmen.py
 
 
 #roda antes de cada teste
-Suite Setup        Super Setup      vet.fml@gmail.com  
+Suite Setup        Super Setup      user@gmail.com  
 
 *Test Cases*
 
